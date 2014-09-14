@@ -1,4 +1,6 @@
 import argparse
+import logging
+logging.basicConfig()
 
 from elasticsearch import Elasticsearch
 
