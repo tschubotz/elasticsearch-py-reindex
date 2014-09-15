@@ -72,7 +72,7 @@ def scan(client, index, scroll='10m'):
 
     scroll_id = response['_scroll_id']
 
-    while True:
+    while 1:
         response = client.scroll(scroll_id, scroll=scroll)
         if not response['hits']['hits']:
             break
