@@ -38,7 +38,8 @@ def main(args):
             count = 0
             print 'Total done: {0}'.format(total)
 
-    client.bulk(body=bulk_items)
+    if bulk_items:
+        client.bulk(body=bulk_items)
     print 'Total done: {0}'.format(total)
 
 
