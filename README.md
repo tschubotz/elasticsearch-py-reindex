@@ -6,6 +6,7 @@ Batchwise elasticsearch reindexing for restricted disk space
 ```
 python reindex.py -h
 usage: reindex.py [-h] -s SOURCE_INDEX -d DESTINATION_INDEX [-b BATCH_SIZE]
+                  [-p PROCESSES]
 
 Batchwise elasticsearch reindexing for restricted disk space
 
@@ -17,4 +18,6 @@ optional arguments:
                         Destination index
   -b BATCH_SIZE, --batch_size BATCH_SIZE
                         #docs per batch
+  -p PROCESSES, --processes PROCESSES
+                        Number of parallel worker processes to use
 ```
